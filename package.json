@@ -2,9 +2,15 @@
   "name": "noqu-cli",
   "version": "0.0.1",
   "description": "Noqu app generator",
-  "main": "index.js",
+  "repository": "https://github.com/machester4/create-noqu-app",
+  "author": "Michael Pintos",
+  "license": "MIT",
+  "main": "bin.js",
+  "bin": {
+    "create-noqu-app": "./bin.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node bin.js job new demo"
   },
   "keywords": [
     "noqu",
@@ -12,6 +18,8 @@
     "queues",
     "redis"
   ],
-  "author": "Michael Pintos",
-  "license": "MIT"
+  "dependencies": {
+    "hygen": "^5.0.3",
+    "inquirer": "^7.0.0"
+  }
 }
