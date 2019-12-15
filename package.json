@@ -7,10 +7,12 @@
   "license": "MIT",
   "main": "bin.js",
   "bin": {
-    "create-noqu-app": "./bin.js"
+    "noqu-cli": "./bin.js"
   },
   "scripts": {
-    "test": "node bin.js job new demo"
+    "test": "node . app new my-app",
+    "preuninstall": "cd node_modules/hygen npm unlink && cd ../inquirer && npm unlink",
+    "postinstall": "cd node_modules/hygen && npm link && cd ../inquirer && npm link"
   },
   "keywords": [
     "noqu",

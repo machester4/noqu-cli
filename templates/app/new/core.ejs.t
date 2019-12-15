@@ -1,3 +1,3 @@
 ---
-sh: "git clone https://github.com/machester4/noqu-core <%= name %> && cd '<%= cwd %>/<%= name %>' && npm install"
+sh: "git clone https://github.com/machester4/noqu <%=name%> && cd '<%=cwd%>/<%=name%>' && rm -rf .git && npm install && mv .env.copy .env"
 ---
