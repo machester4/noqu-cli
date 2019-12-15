@@ -11,8 +11,8 @@
   },
   "scripts": {
     "test": "node . app new my-app",
-    "preuninstall": "cd node_modules/hygen npm unlink && cd ../inquirer && npm unlink",
-    "postinstall": "cd node_modules/hygen && npm link && cd ../inquirer && npm link"
+    "preuninstall": "npm unlink hygen && npm unlink inquirer",
+    "postinstall": "cd node_modules/hygen && npm link --local && cd ../inquirer && npm link --local"
   },
   "keywords": [
     "noqu",
