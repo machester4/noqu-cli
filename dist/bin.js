@@ -1,1 +1,2 @@
+#!/usr/bin/env node
 "use strict";const{runner}=require("hygen"),Logger=require("hygen/lib/logger"),path=require("path"),defaultTemplates=path.join(__dirname,"templates");runner(process.argv.slice(2),{templates:defaultTemplates,cwd:process.cwd(),logger:new Logger(console.log.bind(console)),createPrompter:()=>require("inquirer"),exec:(a,b)=>{const c=b&&0<b.length?{input:b}:{};return require("execa").shell(a,c)},debug:!!process.env.DEBUG});
