@@ -23,5 +23,11 @@
   "dependencies": {
     "hygen": "^5.0.3",
     "inquirer": "^7.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "babel-preset-minify": "^0.5.1"
   }
 }
