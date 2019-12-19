@@ -2,12 +2,12 @@
   "name": "noqu-cli",
   "version": "0.0.1",
   "description": "Noqu app generator",
-  "repository": "https://github.com/machester4/create-noqu-app",
+  "repository": "https://github.com/machester4/noqu-cli",
   "author": "Michael Pintos",
   "license": "MIT",
   "main": "/dist/bin.js",
   "bin": {
-    "noqu-cli": "./bin.js"
+    "noqu-cli": "/dist/bin.js"
   },
   "scripts": {
     "test": "node . app new my-app",
