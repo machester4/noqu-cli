@@ -5,12 +5,13 @@
   "repository": "https://github.com/machester4/create-noqu-app",
   "author": "Michael Pintos",
   "license": "MIT",
-  "main": "bin.js",
+  "main": "/dist/bin.js",
   "bin": {
     "noqu-cli": "./bin.js"
   },
   "scripts": {
     "test": "node . app new my-app",
+    "build": "babel bin.js -d dist",
     "preuninstall": "npm unlink hygen && npm unlink inquirer",
     "postinstall": "cd node_modules/hygen && npm link --local && cd ../inquirer && npm link --local"
   },
