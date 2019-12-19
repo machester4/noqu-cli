@@ -5,9 +5,9 @@
   "repository": "https://github.com/machester4/noqu-cli",
   "author": "Michael Pintos",
   "license": "MIT",
-  "main": "/dist/bin.js",
+  "main": "./dist/bin.js",
   "bin": {
-    "noqu-cli": "/dist/bin.js"
+    "noqu-cli": "./dist/bin.js"
   },
   "scripts": {
     "test": "node . app new my-app",
